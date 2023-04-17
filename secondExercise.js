@@ -5,7 +5,11 @@ const subtraction = (array) => {
   return array.reduce((acc, curr) => acc - curr, 0)
 }
 
-const multiplication = (x, y) => {
+const multiplication = (array) => {
+  return array.reduce((acc, curr) => acc * curr, 1)
+}
+
+const ordinaryMultiplication = (x, y) => {
   return x * y
 }
 
@@ -16,6 +20,7 @@ const division = (x, y) => {
 
 console.log(addition([1, 2 , 3, 27]))
 console.log(subtraction([1, 2 , 3, 27]))
-console.log(multiplication(5, 204))
+console.log(multiplication([1, 2 , 3, 27])),
+console.log(ordinaryMultiplication(1, 8)),
 console.log(division(20,4))
 console.log('Throw an error when dividend is equal to 0: ', division(0,1))
